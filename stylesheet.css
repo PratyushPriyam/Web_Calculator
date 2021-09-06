@@ -1,0 +1,255 @@
+body
+{
+    background: linear-gradient(45deg, limegreen 50%, yellow 50%);
+    overflow: hidden; /* Hides Scroll Bar*/
+}
+
+.para
+{
+    display: flex;
+    position: relative;
+    top: 35%;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: ALGERIAN;
+    padding-top: 5px;
+    font-size: 1.5rem;
+    animation: alternateColor 10s infinite alternate;
+    visibility: visible;
+    cursor: grab;
+}
+
+@keyframes alternateColor
+{
+    0%
+    {
+        color: black;
+    }
+    50%
+    {
+        color: white;
+    }
+    100%
+    {
+        color: black;
+    }
+}
+
+.container
+{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator
+{
+    position: absolute;
+    width: 370px;
+    margin: auto;
+    border-radius: 2px;
+    background: #f2f2f2;
+    padding: 15px 15px 20px 20px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+}
+
+.only_360px
+{
+    display: none;
+}
+
+#user_input
+{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 5px;
+    text-align: right;
+    border: none;
+    background-color: whitesmoke;
+    direction: ltr;
+    outline: none;
+    font-size: 2rem;
+    cursor: not-allowed;
+    border: 0.5px solid black;
+    border-radius: 6px;
+}
+
+.bttn1
+{
+    width: 24%;
+    height: 24px;
+    padding: 25px;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+    background: whitesmoke;
+    visibility: visible;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 25px;
+    border: none;
+}
+
+.bttn2
+{
+    width: 32.5%;
+    height: 24px;
+    padding: 25px;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+    background: whitesmoke;
+    visibility: visible;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 25px;
+    border: none;
+}
+
+.bttnEqual
+{
+    width: 53%;
+    height: 24px;
+    padding: 25px;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+    background: whitesmoke;
+    border: 0.5px solid lightgray;
+}
+
+#del_but
+{
+    width: 22%;
+    height: 24px;
+    padding: 25px;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+    background-color: azure;
+    border: 0.5px solid lightgray;
+    border-radius: 15px;
+}
+
+#del_but:hover
+{
+    background: linear-gradient(45deg, orange, yellow);
+}
+
+.bttn1:hover , .bttnEqual:hover, .bttn2:hover
+{
+    background-color: navy;
+    color: white;
+}
+
+#icon1:hover , #icon2:hover
+{
+    filter:drop-shadow(0px 0px 5px navy);
+}
+
+@media(max-width:360px)
+{
+    .bttn1
+    {
+        width: 23%;
+    }
+    .bttn2
+    {
+        width: 32%;
+    }
+    .calculator
+    {
+        width: 240px;
+    }
+    .bttnEqual
+    {
+        width: 46%;
+    }
+    body
+    {
+        background-repeat: no-repeat;
+    }
+    .para
+    {
+        display: none;
+    }
+    .mobile
+    {
+        display: block;
+    }
+}
+
+@media(max-width:380px) and (min-width:360px)
+{
+    .para
+    {
+        display: none;
+    }
+    .bttn2
+    {
+        width: 32.4%;
+    }
+    .mobile
+    {
+        display: block;
+    }
+    .calculator
+    {
+        width: 290px;
+    }
+    .bttn1
+    {
+        width: 23.4%;
+    }
+}
+
+@media(min-width:381px) and (max-width:450px)
+{
+    .calculator
+    {
+        width: 320px;
+    }
+}
+
+@media(max-width:450px) and (min-width:381px)
+{
+    .para
+    {
+        display: none;
+    } 
+    .mobile
+    {
+        display: block;
+    }
+}
+
+@media(min-width:451px)
+{
+    .mobile
+    {
+        display: none;
+    }
+}
+
+@media(max-width:775px)
+{
+    .para
+    {
+        top: 45%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
